@@ -6,6 +6,7 @@ from table `hbtn_0e_0_usa`.
 import MySQLdb
 import sys
 
+
 def list_cities(username, password, database_name):
     try:
         # Connect to the MySQL server
@@ -31,6 +32,7 @@ def list_cities(username, password, database_name):
     except MySQLdb.Error as e:
         print(f"Error: {e}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:

@@ -6,6 +6,7 @@ that matches the search argument from table `hbtn_0e_0_usa`.
 import MySQLdb
 import sys
 
+
 def list_cities_by_state(username, password, database_name, state_name):
     try:
         # Connect to the MySQL server
@@ -37,10 +38,11 @@ def list_cities_by_state(username, password, database_name, state_name):
         print(f"Error: {e}")
         sys.exit(1)
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 5:
-        print("Usage: python script.py <username> <password> <database_name> <state_name>")
+        print("Usage: python script.py <username> <pd> <db_name> <state_name>")
         sys.exit(1)
 
-    username, password, database_name, state_name = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
-    list_cities_by_state(username, password, database_name, state_name)
+    username, pd, db_name, state_name = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+    list_cities_by_state(username, pd, db_name, state_name)

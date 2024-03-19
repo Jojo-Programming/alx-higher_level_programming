@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-"""Lists all State objects containing the letter 'a' from the database hbtn_0e_6_usa"""
+"""Lists all State objects containing the letter 'a' from db hbtn_0e_6_usa"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
+
 def list_states_with_letter_a(username, password, database_name):
-    """Lists all State objects containing the letter 'a' from the database hbtn_0e_6_usa"""
+    """Lists all State objects containing letter 'a' from db hbtn_0e_6_usa"""
     # Create the SQLAlchemy engine
-    engine = create_engine(f"mysql+mysqldb://{username}:{password}@localhost:3306/{database_name}")
+    engine = create_engine(f"mysql+mysqldb://{usnm}:{pd}@lclhst:3306/{db_nm}")
     # Create a session to interact with the database
     Session = sessionmaker(bind=engine)
     session = Session()
@@ -19,6 +20,7 @@ def list_states_with_letter_a(username, password, database_name):
         print(f"{state.id}: {state.name}")
     # Close the session
     session.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:

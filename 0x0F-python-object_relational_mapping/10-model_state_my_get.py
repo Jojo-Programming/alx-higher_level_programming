@@ -1,16 +1,17 @@
 #!/usr/bin/python3
-"""Prints the State object with the specified name from the database hbtn_0e_6_usa"""
+"""Prints State object with specified name from the database hbtn_0e_6_usa"""
 
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
+
 def find_state_by_name(username, password, database_name, state_name):
-    """Prints the State object with the specified name from the database hbtn_0e_6_usa"""
+    """Prints State object with specified name from database hbtn_0e_6_usa"""
 
     # Create the SQLAlchemy engine
-    engine = create_engine(f"mysql+mysqldb://{username}:{password}@localhost:3306/{database_name}")
+    engine = create_engine(f"mysql+mysqldb://{username}:{pd}@localhost:3306}")
 
     # Create a session to interact with the database
     Session = sessionmaker(bind=engine)
@@ -27,6 +28,7 @@ def find_state_by_name(username, password, database_name, state_name):
 
     # Close the session
     session.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 5:

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-3-my_safe_filter_states - this displays all values whose name matches the passed
+3-my_safe_filter_states - displays all values whose name matches the passed
 argument in the states table of hbtn_0e_0_usa using argument sanitization.
 """
 if __name__ == "__main__":

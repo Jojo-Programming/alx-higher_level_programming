@@ -6,11 +6,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
+
 def get_first_state(username, password, database_name):
     """Prints the first State object from the database hbtn_0e_6_usa"""
 
     # Create the SQLAlchemy engine
-    engine = create_engine(f"mysql+mysqldb://{username}:{password}@localhost:3306/{database_name}")
+    engine = create_engine(f"mysql+mysqldb://{usrnm}:{pd}@lclhst:3306/{db_nm}")
 
     # Create a session to interact with the database
     Session = sessionmaker(bind=engine)
@@ -27,6 +28,7 @@ def get_first_state(username, password, database_name):
 
     # Close the session
     session.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
