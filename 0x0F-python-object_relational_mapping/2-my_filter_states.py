@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"
+ states by user input - takes in argument and displays all values in states
+"
 import MySQLdb
 import sys
 
