@@ -1,6 +1,6 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 
-"""A class that defines a rectangle
+"""A class rectangle that defines a rectangle and no imports are required
  """
 
 
