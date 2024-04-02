@@ -9,6 +9,7 @@ of the specified repository by the given owner.
 import requests
 import sys
 
+
 def list_commits(repo, owner):
     """
     Lists 10 commits of the specified repository by the given owner.
@@ -18,7 +19,7 @@ def list_commits(repo, owner):
     """
     url = f"https://api.github.com/repos/{owner}/{repo}/commits"
     params = {'per_page': 10}
-    
+ 
     try:
         response = requests.get(url, params=params)
         commits = response.json()
@@ -30,6 +31,7 @@ def list_commits(repo, owner):
 
     except requests.exceptions.RequestException as e:
         print(e)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:

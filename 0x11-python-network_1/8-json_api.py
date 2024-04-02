@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 
 """
-This script takes a letter as input and sends a POST request to http://0.0.0.0:5000/search_user
-with the letter as a parameter 'q'. It processes the response and displays the result accordingly.
+This takes letter as input sends POST request http://0.0.0.0:5000/search_user
+with letter as parameter 'q'. It processes response displays result accordingl
 """
 
 import requests
 import sys
 
+
 def search_user(letter):
     """
-    Sends a POST request with the letter as a parameter and displays the result.
+    Sends POST request with the letter as a parameter and displays the result.
 
     :param letter: The letter to search for.
     """
@@ -28,6 +29,7 @@ def search_user(letter):
 
     except ValueError:
         print("Not a valid JSON")
+
 
 if __name__ == "__main__":
     letter = sys.argv[1] if len(sys.argv) > 1 else ""
