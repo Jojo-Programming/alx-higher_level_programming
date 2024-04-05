@@ -1,5 +1,5 @@
 #!/usr/bin/python3
- """this defines a Rectangle class."""
+ """this rectangle defines a Rectangle classbase on 3-rectangle.py ."""
 
 
  class Rectangle:

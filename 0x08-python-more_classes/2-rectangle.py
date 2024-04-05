@@ -1,5 +1,5 @@
 #!/usr/bin/python3 
- """this defines a Rectangle class.""" 
+ """this rectangle class defines a Rectangle with some properties and retrieves it .""" 
   
   
  class Rectangle: 
